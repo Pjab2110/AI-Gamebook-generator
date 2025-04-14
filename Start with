@@ -1,45 +1,30 @@
-🧙‍♀️ AI Gamebook Generator
-An AI-powered tool that generates interactive choose-your-own-adventure style gamebooks using Meta's LLaMA language model.
-This project combines natural language generation, narrative branching, and prompt engineering to create unique, immersive story experiences — ideal for fantasy, sci-fi, horror, and more.
+🚀 Start with
+To run the gamebook generator from the terminal, use the following command:
 
-💡 Built as part of my master's thesis exploring generative language models in creative applications.
+python3 gamebook-generator_1.py --prompt "Post-apocalyptic wasteland where humanity is rebuilding after a mysterious global event."
+================================================================================================================================================================
+The --prompt parameter allows you to set the theme and atmosphere of your game. The AI will generate the starting scene along with branching narrative choices.
+================================================================================================================================================================
+📝 Editing in Twine
+Import to Twine
+The generated .twee file can be imported into the Twine editor:
 
-🎯 Features
-✍️ Dynamic story generation with rich, consistent worldbuilding
+Open Twine.
 
-🧠 Based on LLaMA (Meta AI's large language model)
+Click “Import from file”.
 
-🔀 Branching narrative logic: multiple story paths and endings
+Select the .twee file (e.g., generated_game.twee).
 
-🎮 Optional interactive demo (Streamlit or CLI)
+Export as HTML
+Once your story is ready in Twine:
 
-📦 Modular codebase for easy extension and experimentation
+Click the gear icon.
 
-
-
-🚀 How It Works
-Prompt template defines the setting and tone of the story
-
-User choices are fed back into the model to continue the narrative
-
-Branching logic is tracked to build a coherent tree of events
-
-Final output is compiled into a playable gamebook-style document (Markdown or HTML)
+Choose “Publish to File” – this will export a .html file containing your entire game.
 
 
-🧪 Technologies Used
-LLaMA 
-Python 3.10+
-Twine
+🌐 Example
+An example of a published story can be found here:
+👉 https://post-apoctalyptic-land.itch.io/post-apocalyptic-wasteland
 
-
-🧵 To-Do / Ideas
- 
- Include user state (inventory, health, etc.)
-
- Expand to multiplayer / collaborative fiction
-
- Fine-tune LLaMA for fantasy-style text
-
-📜 License
-MIT – open for experimentation, adaptation, and fun!
+This shows what the final result might look like when hosted online using the exported HTML file.
